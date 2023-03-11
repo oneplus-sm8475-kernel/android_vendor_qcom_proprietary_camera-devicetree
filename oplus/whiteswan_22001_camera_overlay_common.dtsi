@@ -89,27 +89,27 @@
 		cell-index = <0>;
 		compatible = "qcom,camera-flash";
 		qcom,flash-name = "pmic";
-		flash-source = <&pm8350c_flash0 &pm8350c_flash1>;
-		torch-source = <&pm8350c_torch0 &pm8350c_torch1>;
-		switch-source = <&pm8350c_switch2>;
+		flash-source = <&pm8350c_flash0>;
+		torch-source = <&pm8350c_torch0>;
+		switch-source = <&pm8350c_switch0>;
 		status = "ok";
 	};
 
 	led_flash_rear_aux: qcom,camera-flash1 {
 		cell-index = <1>;
 		compatible = "qcom,camera-flash";
-		flash-source = <&pm8350c_flash0 &pm8350c_flash1>;
-		torch-source = <&pm8350c_torch0 &pm8350c_torch1>;
-		switch-source = <&pm8350c_switch2>;
+		flash-source = <&pm8350c_flash0>;
+		torch-source = <&pm8350c_torch0>;
+		switch-source = <&pm8350c_switch0>;
 		status = "ok";
 	};
 
 	led_flash_rear_tele: qcom,camera-flash@2 {
 		cell-index = <2>;
 		compatible = "qcom,camera-flash";
-		flash-source = <&pm8350c_flash0 &pm8350c_flash1>;
-		torch-source = <&pm8350c_torch0 &pm8350c_torch1>;
-		switch-source = <&pm8350c_switch2>;
+		flash-source = <&pm8350c_flash0>;
+		torch-source = <&pm8350c_torch0>;
+		switch-source = <&pm8350c_switch0>;
 		status = "ok";
 	};
 
@@ -503,7 +503,7 @@
 
 	qcom,cam-sensor4 {//front second camera
 		cell-index = <4>;
-		compatible = "qcom,cam-sensor", "zeku,aon-sensor";
+		compatible = "qcom,cam-sensor", "zeku,aon-auxsensor";
 		csiphy-sd-index = <4>;
 		sensor-position-roll = <270>;
 		sensor-position-pitch = <0>;
